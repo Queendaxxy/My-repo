@@ -1,0 +1,938 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEN</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        e1bc07                                                                      <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        
+    </div>
+    </div>
+</body>
+</html>
+
+
+
+body{
+    font-family: 'Times New Roman';
+    line-height: 1em;
+    font-weight: bold;
+    margin: 30px;
+    margin-top: 15px;
+   padding: 0;
+   background:radial-gradient(white,rgb(172, 185, 248));
+  }
+  .container{
+      width: 95%;
+      margin: auto;
+      overflow: hidden;
+  }
+  .header{
+      height: fit-content;
+  display:flex;
+  
+  }
+  .header #branding{
+      display: flex;
+      align-items: center;
+      margin: 0;
+      float: left;
+  }
+  .header img{
+      float:left;
+      display:inline;
+      width: 50px;
+      height: 50px;
+      border-style: hidden;
+      border-radius: 70px;
+  }
+  .header #branding h1{
+  margin: 0;
+  color:rgb(4, 56, 4);
+  position: relative;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  }
+  .header .highlight{
+      font-weight: bold;
+      color: rgb(212, 9, 53);
+      line-height: 1em;
+  }
+  .header ul {
+  margin-left: 90vh;
+  margin-top: 2vh;
+  list-style: none;
+  overflow: hidden;
+  color:green;
+  } 
+  .header ul a{
+      color:rgb(29, 94, 16);
+      text-decoration: none;
+      font-size: 0.8em;
+      display: block;
+  }
+  .header ul a:hover{
+     font-weight: bold;
+     color: blue;
+  }
+  .header .current a{
+         font-weight: bold;
+         color: rgb(212, 9, 53);
+     }
+  .header li{
+      margin: 0;
+      padding: 5px;
+      float: left;
+  }
+  .header li .icon-arrow{
+      width: 5px;
+      height: 2px;
+      background-color:radial-gradient(rgb(212, 202, 202),rgb(252, 250, 250));
+      position: relative;
+      border-radius: 4px;
+      display: block;
+      float: right;
+      margin: 6px;
+      
+      }
+  .header li .icon-arrow::after{
+      content: "";
+      position: absolute;
+      background-color:black;
+      display: inline-block;
+      right:-4px;
+      width: 7px;
+      height: 2px;
+      transform: rotate(45deg);
+      border-radius: 4px;
+      bottom: 2px;
+      }
+  .header li  .icon-arrow::before{
+      content: "";
+      position: absolute;
+      background-color:black;
+      display: inline-block;
+      right:-4px;
+      width: 7px;
+      height: 2px;
+      transform: rotate(-45deg);
+      border-radius: 4px;
+      bottom:-2px;
+      }
+  .header .newsletter{
+      float: right;
+      margin-top: 2.3vh; 
+      width: 300px;
+  }
+  .header .newsletter input[type=email]{
+      height: 20px;
+      width: 200px;
+      font-size: 0.8em;
+      font-family: 'Times New Roman';
+      border-style: none;
+  }
+  .button1{
+      height: 20px;
+      background: rgb(212, 9, 53);
+      color: white;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 70px;
+      font-size: 10px bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      border-style: none;
+  }
+  #customAlert{
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+  }
+  #boxes{
+      border-radius: 5px;
+      margin-top: 0;
+      margin-left: 400px;
+      height: 150px;
+      width: 500px;
+      text-align: center;
+      color: white;
+      box-shadow: 2px 2px 8px black;
+      background-color: rgb(19, 19, 145);
+  
+  }
+  #boxes .content2{
+      padding-top: 1px;
+      font-size: 0.5em;
+      z-index: 999;
+  }
+  #confirmbtn{
+      height: 25px;
+      width: 80px;
+      border-radius: 8px;
+      background-color:white;
+      color: blue;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-left:400px ;
+      border-style: none;
+      font-weight: bold;
+  }
+  /*
+  @media all and (max-width:1024px) {
+      
+  .header-active{
+      transform: translateX(-30%);
+  
+  }
+  @keyframes headerNavFade{
+      from{
+          opacity:0;
+          transform: translateX(-80px);
+      }
+      to{
+          opacity: 1;
+          transform: translateX(-30px);
+      }
+      
+  }
+  .toggle .line1{
+      transform: rotate(-45deg) translate(-5px,6px);
+  }
+  .toggle .line2{
+      opacity: 0;
+  }
+  .toggle .line3{
+      transform: rotate(45deg) translate(-5px,6px);
+  }
+  
+  .hamburger div {
+     margin-top: 3px;
+     width: 25px;
+     height: 2px;
+     background-color:green;
+  }
+  .hamburger{
+     display:block;
+     margin-top:10px;
+     float: inline-start;
+     margin-left: 40px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+  }
+      header{
+          flex-wrap: nowrap;
+      }
+      header nav{
+          width: 50%;
+      }
+          header nav{
+              float: left;
+              top:15vh;
+              position: absolute;
+              display: flex;
+              height: 100vh;
+              flex-direction: column;
+              align-items: center;
+              background-color:rgb(240, 188, 200);
+              transform:translateX(-130%);
+              transition: transform 0.5s ease-in;
+              }     
+  }
+  @media all and (max-width:768px) {
+      body{
+          overflow-x: hidden;
+      }
+      header{
+          flex-wrap: nowrap;
+      }
+      header nav{
+          float: left;
+          top:15vh;
+          width: 50%;
+          position: absolute;
+          display: flex;
+          height: 100vh;
+          flex-direction: column;
+          align-items: center;
+          background-color:rgb(240, 188, 200);
+          transform:translateX(-130%);
+          transition: transform 0.5s ease-in;
+          }     
+  }   
+  @media all and (max-width:600px) {
+      .hamburger div {
+          margin-top: 2px;
+          width: 12px;
+          height: 2px;
+          background-color:green;
+       }
+       .hamburger{
+          display:block;
+          margin-top:0px;
+          float: inline-start;
+          margin-left: 3px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+       }
+       */
+       
+  #showcase{
+   text-align: left;
+   justify-content: center;
+   
+  }
+  #showcase img{
+      width: 600px;
+      height:330px;
+      margin-top: 7vh;
+      border-style: hidden;
+      border-radius: 700px;
+      border-top-left-radius:20px;
+      float: right;
+  }
+  #showcase h1{
+      margin-top:8vh;
+      font-size: 2.5em;
+      font-family: 'Times New Roman';
+      line-height: 1em;
+      color: black;
+  }
+  #showcase p{
+      font-size: 1em;
+      font-family:  Tahoma;
+      font-style: italic;
+      color: green;
+  }
+  #showcase .box{
+  display: inline-block;
+  }
+  #showcase .box img{
+      margin-top: 4vh;
+      width: 120px;
+      border-radius: 30px;
+      height:60px;
+      padding: 5px;
+  }
+  #showcase button{
+      background-color:  rgb(212, 9, 53);
+      color: white;
+      border-radius: 15px;
+      border-style: none;
+      text-decoration: none;
+      margin-top: 1.5vh;
+      font-size: 1.1em;
+      padding: 10px 20px 10px 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     #showcase button:hover{
+      text-transform: uppercase;
+      cursor: pointer;
+      color: black;
+     }
+  #mission{
+  margin-top: 2vh;
+  min-height: 200px;
+  background: url('../img/rossy2.jpg') no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+  }
+  .color-overlay{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity:.5;
+  position: absolute;
+  z-index: -1;
+  }
+  .mission-list {
+      float: left;
+      width: 20%;
+      padding: 5vh;
+      margin-left: 11vh;
+  }
+  #products .container{
+      max-width: 1120px;
+      width: 100%;
+      padding: 45px 0;
+  }
+  .slide-content{
+       margin: 0 40px;
+       overflow: hidden;
+  }
+  .swiper-navBtn{
+      color: #6e93f7;
+      transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+  color: #051e64;
+  }
+  .swiper-navBtn:before,
+  .swiper-navBtn::after{
+      font-size: 30px;
+  }
+  .swiper-button-next{
+      right: 0;
+  }
+  .swiper-button-prev{
+      left: 0;
+  }
+  .card{
+      text-align: center;
+      background-color: #ffffff;
+      height: 60vh;
+      border-radius: 10px;
+      box-shadow: 4em;
+  }
+  .card .heading{
+      background-color: rgb(76, 76, 233);
+      font-size: 1.5em;
+      color: #ffffff;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  }
+  .card img{
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+  }
+  .rate{
+      font-weight: lighter;
+      font-size: 1.2em;
+  }
+  .detail{
+      font-weight: bold;
+      font-size: 1.2em;
+  }
+  .card button{
+      background-color: rgb(76, 76, 233);
+      text-decoration: none;
+  color: #ffffff;
+  border-style: none;
+  width: 100px;
+  height: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  }
+  .card button:hover{
+      font-weight: bold;
+  color: #000;
+      cursor: pointer;
+  
+  }
+  #end {
+      background: url('../img/rossy2.jpg') no-repeat;
+      margin-top: 2vh;
+  min-height: 250px;
+  background: url('../img/rossy2.jpg') no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+  }
+  .color-overlay{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity:.9;
+  position: absolute;
+  z-index: -1;
+  }
+  #end #branding{
+      display: flex;
+      align-items: center;
+      margin-top: 3vh;
+      margin-bottom: 2vh;
+      margin-left: 37%;
+  }
+  #end img{
+      float:left;
+      display:inline;
+      width: 50px;
+      height: 50px;
+      border-style: hidden;
+      border-radius: 70px;
+  }
+  #end #branding h1{
+  margin: 0;
+  color: #ffffff;
+  position: relative;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  font-weight: bold;
+  }
+  ul#social{
+      margin-left: 38%;
+      display: flex;
+  
+      }
+      #social li{
+      list-style: none;
+      display: inline-block; 
+      margin-left: 0;
+      margin-right: 15px;
+      font-size: 20px;
+      padding: 10px;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      
+      }
+      #social li:hover{
+      border-color: #9e0d2c;
+      }
+      
+      li:hover  .fa-facebook-f{
+      color: #1a58de;
+      }
+      li:hover  .fa-twitter{
+      color:#00acee;
+      }
+      li:hover .fa-instagram{
+      color: #f14843;
+      }
+      li:hover .fa-linkedin{
+      color: white;
+      }
+      .h{
+      width: 100%;
+      height: 1px;
+      border: 0 none;
+      background-color:#ffffff;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      footer{
+      font-size: 0.8em;
+      color: #ffffff;
+      }
+      /*
+      @media all and (max-width:600px) {
+      #end p{
+      font-size: 1.3em;
+      }
+      form{
+      background-color: rgb(54, 67, 141);
+      }
+      input[type="text"]{
+      width: 30vh;
+      padding-left: 3vh;
+      font-size: 0.5em;
+      }
+      .button4{
+      padding-right: 3vh;
+      }
+      footer{
+          font-size: 1em;
+          }
+      }*/
+      #contact-form{
+  align-items: center;
+  font-size: 1.2em;
+  }
+  #contact-form p{
+      line-height: 1em;
+      font-weight: lighter;
+  }
+  .fill{
+  margin-left: 30%;
+  }
+  .fill input[type=text]{
+  background-color: none;
+  width: 500px;
+  height: 30px;
+  margin-bottom: 20px;
+  border-color: #061d4f;
+  border-radius: 3px;
+  font-size: 0.8em;
+  padding-top: 0;
+  padding-bottom: 0 ; 
+  }
+  
+  .fill input[type=email]{
+  width: 500px;
+  height: 30px;
+  border-color: #061d4f;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+  padding: 1px;
+  }
+  .button6{
+  height: 30px;
+  width: 150px;
+  background-color: #0e1965;
+  color: white;
+  border-style: none;
+  border-radius: 3px;
+  font-size: 0.7em;
+  margin-left: 20%;
+  cursor: pointer;
+  }
+  .big{
+  margin: 0;
+  }
+  .big input[type="text"]{
+  height: 70px;
+  font-size: 0.8em;
+  padding-left: 0px;
+  }
+  @media all and (max-width:900px) {
+      #contact-form{
+          font-size: 1em;
+      }
+  #form h1{
+  font-size: 1.5em;
+  }
+  .fill{
+  margin-left: 0;
+  }
+  .fill input[type="text"]{
+  width: 300px;
+  height: 40px;
+  font-size: 0.2em;
+  padding: 0;
+  }
+  .fill input[type="email"]{
+  width: 300px;
+  height: 40px;
+  }
+  .big input[type="text"]{
+  height: 80px;
+  margin-top: 0;
+  font-size: 0.2em;
+  padding-top: 0;
+  padding-bottom: 0% ;
+  }
+  .button6{
+  height: 40px;
+  width: 150px;
+  float: left;
+  }
+  }
+  
+
+
+
+
+  <!-- <header class="header">
+<div class="container">
+<form class="newsletter">
+<input type="email" placeholder="Enter Email">
+<button onclick="trigger()"  class="button1">SUSCRIBE</button>
+<div id="customAlert">
+<div id="boxes">
+<div class="content2">
+<p>Suscription Succesfull!</p>
+<button type="button" id="confirmbtn" onclick="hidealert()">OK</button>
+</div>
+</div>
+</div>
+</form>
+
+<div id="branding">
+<img src="./img/rossy7.jpg" alt="">
+<h1><span class="highlight">ROSSYGLOW</span>
+<br>WORLD</h1>
+</div>
+
+<ul class="nav">
+<li><a href="index.html">HOME<div class="icon-arrow"></div></a></li>
+<li class="current"><a href="products.html">PRODUCTS<div class="icon-arrow"></div></a></li>
+<li><a href="contact.html">CONTACT<div class="icon-arrow"></div></a></li>
+</ul>
+<div class="hamburger">
+<div class="line1"></div>
+<div class="line2"></div>
+<div class="line3"></div>
+</div>
+</div>
+</header> -->
+
+<!-- <section id="products">
+<div class="container swiper">
+  <div class="slide-content">
+  <div class="swiper-wrapper">
+<div class="card swiper-slide">
+<div class="heading">Lightening Black Soap</div>
+<p class="rate"><del>$5</del> -$4</p>
+<img src="./img/1.jpg" alt="">
+<p class="detail">Effective removal of black spots <br>and other skin blemishes</p>
+<a href="contact.html"><button class="submit">Shop Now</button></a>
+</div>
+
+<div class="card swiper-slide">
+<div class="heading">Stretch Marks Cream</div>
+<p class="rate"><del>$5</del> -$4</p>
+<img src="./img/4.jpg" alt="">
+<p class="detail">Purely natural<br>No side effects</p>
+<a href="contact.html"><button class="submit">Shop Now</button></a>
+</div>
+
+<div class="card swiper-slide">
+<div class="heading">lightening Face toner</div> 
+<p class="rate"><del>$6</del> -$5</p>
+<img src="./img/6.jpg" alt="">
+<p class="detail">Purely natural effective <br>No side effects</p>
+<a href="contact.html"><button class="submit">Shop Now</button></a>
+</div>
+
+<div class="card swiper-slide">
+<div class="heading">Snow White Luxury Kit</div>  
+<p class="rate"><del>$14</del> -$12</p>
+<img src="./img/12.jpg" alt="">
+<p class="detail">Lightens and glows your skin</p>
+<a href="contact.html"><button class="submit">Shop Now</button></a>
+</div>
+
+<div class="card swiper-slide">
+<div class="heading">Body Lightening Kit</div>  
+<p class="rate"><del>$11</del> -$10</p>
+<img src="./img/9.jpg" alt="">
+<p class="detail">Glows and brightens your skin </p>
+<a href="contact.html"><button class="submit">Shop Now</button></a>
+</div>
+
+<div class="card swiper-slide">
+<div class="heading">Hot Choco Kit</div>  
+<p class="rate"><del>$14</del> -$12</p>
+<img src="./img/3.jpg" alt="">
+<p class="detail">Glows your skin <br>Purely natural</p>
+<a href="contact.html"><button class="submit">Shop Now</button></a>
+</div>
+</div>
+  </div>
+<div class="swiper-button-next swiper-navBtn"></div>
+<div class="swiper-button-prev swiper-navBtn"></div>
+<div class="swiper-pagination"></div>
+</div>
+</section>
+
+<section id="end">
+<div class="container">
+  <div class="color-overlay"></div>
+  <div id="branding">
+    <img src="./img/rossy7.jpg" alt="">
+    <h1>ROSSYGLOW WORLD</h1>
+    </div>
+    <p>Giving Back Your Skin Confidence!</p>
+
+  <ul id="social">
+    <li><i class="fab fa-facebook-f" aria-hidden="true"></i></li>
+    <li><i class="fab fa-twitter" aria-hidden="true"></i></li>
+    <li><i class="fab fa-instagram" aria-hidden="true"></i></li>
+    <li><i class="fab fa-linkedin" aria-hidden="true"></i></li>
+    
+    </ul>
+    
+    <hr class="h">
+    
+    <footer>
+    <p>&copy 2022 WOLVES General Construction & Architechure. All Rights Reserved</p>
+    </footer>
+  </div>
+</section>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="Javascript/rossy.js"></script>
+</html> -->
+
+
+
+
+
+<!-- function trigger() {
+var alert=document.getElementById("customAlert");
+alert.style.display='block';
+}
+function hidealert() {
+var alert=document.getElementById("customAlert");
+alert.style.display='none';
+}
+
+let swiper = new Swiper(".slide-content", {
+slidesPerView: 5,
+spaceBetween: 30,
+slidesPerGroup: 5,
+loop: true,
+centerSlide: 'true',
+fade: 'true',
+grabCursor: 'true',
+loopFillGroupWithBlank: true,
+pagination: {
+el: ".swiper-pagination",
+clickable: true,
+dynamicBullets:true,
+
+},
+navigation: {
+nextEl: ".swiper-button-next",
+prevEl: ".swiper-button-prev",
+},
+
+breakpoints:{
+0: {
+slidesPerView: 1,
+},
+520: {
+slidesPerView: 2,
+},
+950: {
+slidesPerView: 3,
+}
+}
+}); --> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <section id="best-selling">
+    <div class="container">
+        <button class="pre-btn"><img src="IMG/arrowback.png" alt=""></button>
+        <button class="nxt-btn"><img src="IMG/arrowfor.png" alt=""></button>
+        <div class="slide-content">
+            <div class="card swiper-slide">
+                <div class="image">
+                    <span class="discount">50% Off</span>
+                    <img src="./IMG/clothe1.jpg" alt="">
+                    <button class="card-btn">Add to wishlist</button>
+                </div>
+                <div class="info">
+            <h1 class="brand">BRAND</h1>
+            <p class="detail">A short line about the cloth...</p>
+            <span class="rate">$20 </span> <span class="actual-rate">$40</span>
+                </div>
+            </div>
+            
+            <div class="card swiper-slide">
+                <div class="image">
+                    <span class="discount">50% Off</span>
+                    <img src="./IMG/clothe2.jpg" alt="">
+                    <button class="card-btn">Add to wishlist</button>
+                </div>
+                <div class="info">
+            <h1 class="brand">BRAND</h1>
+            <p class="detail">A short line about the cloth...</p>
+            <span class="rate">$20 </span> <span class="actual-rate"> $40</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image">
+                    <span class="discount">50% Off</span>
+                    <img src="./IMG/clothe1.jpg" alt="">
+                    <button class="card-btn">Add to wishlist</button>
+                </div>
+                <div class="info">
+            <h1 class="brand">BRAND</h1>
+            <p class="detail">A short line about the cloth...</p>
+            <span class="rate">$20 </span> <span class="actual-rate">$40</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image">
+                    <span class="discount">50% Off</span>
+                    <img src="./IMG/clothe1.jpg" alt="">
+                    <button class="card-btn">Add to wishlist</button>
+                </div>
+                <div class="info">
+            <h1 class="brand">BRAND</h1>
+            <p class="detail">A short line about the cloth...</p>
+            <span class="rate">$20 </span> <span class="actual-rate"> $40</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image">
+                    <span class="discount">50% Off</span>
+                    <img src="./IMG/clothe1.jpg" alt="">
+                    <button class="card-btn">Add to wishlist</button>
+                </div>
+                <div class="info">
+            <h1 class="brand">BRAND</h1>
+            <p class="detail">A short line about the cloth...</p>
+            <span class="rate">$20 </span> <span class="actual-rate">$40</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image">
+                    <span class="discount">50% Off</span>
+                    <img src="./IMG/clothe1.jpg" alt="">
+                    <button class="card-btn">Add to wishlist</button>
+                </div>
+                <div class="info">
+            <h1 class="brand">BRAND</h1>
+            <p class="detail">A short line about the cloth...</p>
+            <span class="rate">$20 </span> <span class="actual-rate"> $40</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image">
+                    <span class="discount">50% Off</span>
+                    <img src="./IMG/clothe1.jpg" alt="">
+                    <button class="card-btn">Add to wishlist</button>
+                </div>
+                <div class="info">
+            <h1 class="brand">BRAND</h1>
+            <p class="detail">A short line about the cloth...</p>
+            <span class="rate">$20 </span> <span class="actual-rate">$40</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image">
+                    <span class="discount">50% Off</span>
+                    <img src="./IMG/clothe1.jpg" alt="">
+                    <button class="card-btn">Add to wishlist</button>
+                </div>
+                <div class="info">
+            <h1 class="brand">BRAND</h1>
+            <p class="detail">A short line about the cloth...</p>
+            <span class="rate">$20 </span> <span class="actual-rate">$40</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+</body>
+</html>
+
+
