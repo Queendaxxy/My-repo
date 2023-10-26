@@ -55,21 +55,106 @@ padding: 10px 20px 0 20px;
 }
 .branding{
     font-size: 0.8em;
-margin-right: 45px;
+margin-right: 11%;
 padding: 0;
 float: right;
 border-style: solid;
 border-color: 5px solid #000;
 }
+/* @media all and (max-width:600px) {
+    body{
+        background-color: var(snow);
+    }
+    header{
+        margin: 0 50px;
+        }
+    .branding{
+        font-size: 0.5em;
+    
+    padding: 0;
+    float: right;
+    border-style: solid;
+    border-color: 2px solid #000;
+    }
+    header li{
+    float:left;
+    margin-top: 0;
+    }
+    header .first .second{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    float: none;
+    }
+    header .menu-icon{
+    padding: 4.5vh 5vh 0 1vh;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    display: block;
+    }
+    header .menu-icon .nav-icon{
+    background: #333;
+    display: block;
+    height: 2.3px;
+    width: 25px;
+    position: relative;
+    transition: background .2s ease-out;
+    }
+    header .menu-icon .nav-icon::before{
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+    top: 5px;
+    }
+    header .menu-icon .nav-icon::after{
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+    top: -5px;
+    }
+    header li{
+    float:none;
+    }
+    header .menu-btn:checked ~ .first .second{
+    max-height: 240px;
+    }
+    header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background-color: transparent;
+    }
+    header .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top: 0;
+    }
+    header .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top: 0;
+    } */
+
 #showcase{
-    max-height:400px;
+    min-height:400px;
     background-color: var(--text);
-    margin-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    background: url('../IMG/clothe00.jpg') no-repeat;
+    background-position: right;
+    background-size: 50% ;
+    background-color: var(--text);
+    
 }
 .season{
 float: left;
-width: 55%;
-padding-top: 20px;
+width: 43%;
+margin-right: 100px;
+padding: 0;
 }
 .season h1{
     color: var(--bg);
@@ -83,6 +168,7 @@ padding-top: 20px;
     color: var(--last);
     line-height: 2em;
 }
+
 .btn{
     margin-top: 5px;
     border-color: var(--bg);
@@ -101,8 +187,8 @@ padding-top: 20px;
 .arrival{
 margin: 0;
 padding: 0;
-position: relative;
 display: flex;
+
 }
 .arrival h1{
     margin: 0;
@@ -116,7 +202,7 @@ display: flex;
     margin: 0;
 }
 .text{
-    position: absolute;
+    
     padding-left: 10px;
     padding-top: 20px;
 }
